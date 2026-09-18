@@ -9,7 +9,7 @@ namespace Studenten_Cijferbeheer
         public string Naam { get; private set; }
         private double[] _cijfers;
         public double[] Cijfers { get { return _cijfers; } set { _cijfers = value; } }
-        private int aantalCijfers;
+        public int aantalCijfers { get; private set; }
 
         public Student (string naam)
         {
